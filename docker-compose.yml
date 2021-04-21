@@ -112,4 +112,9 @@ services:
       KAFKA_REST_CLIENT_BOOTSTRAP_SERVERS: $BOOTSTRAP_SERVERS
       KAFKA_REST_CLIENT_SECURITY_PROTOCOL: "SASL_SSL"
       KAFKA_REST_CLIENT_SASL_JAAS_CONFIG: $SASL_JAAS_CONFIG
-      KAFKA_REST_CLIENT_SASL_MECHANISM: "PLAIN"      
+      KAFKA_REST_CLIENT_SASL_MECHANISM: "PLAIN" 
+      KAFKAREST_JMX_OPTS: "-javaagent:/usr/share/jmx-exporter/jmx_prometheus_javaagent-0.12.0.jar=1234:/usr/share/jmx-exporter/rest_proxy.yml"
+    volumes:
+        - ./monitoring_configs/jmx-exporter/jmx_prometheus_javaagent-0.12.0.jar:/usr/share/jmx-exporter/jmx_prometheus_javaagent-0.12.0.jar
+        - ./monitoring_configs/jmx-exporter/rest_proxy.yml:/usr/share/jmx-exporter/rest_proxy.yml
+    

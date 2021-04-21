@@ -54,3 +54,10 @@ scrape_configs:
           - "kafka-lag-exporter:9999"
         labels:
           env: "dev"
+
+  - job_name: "rest-proxy"
+    static_configs:
+      - targets: ["rest-proxy:1234"]
+        labels:
+          env: 'dev'
+          

@@ -60,6 +60,6 @@ You can send data to the REST Proxy as follows:
 curl -X POST localhost:8082/topics/rp_test_bin1 \
       -H "Content-Type: application/vnd.kafka.binary.v2+json" \
       -H "Accept: application/vnd.kafka.v2+json" \
-      --data '{"records":[{"value":"S2Fma2E="}]}'
+      --data '{"records":[{"value":"S2Fma2E="}]}'     
 ````
 See https://docs.confluent.io/platform/current/tutorials/cp-demo/docs/on-prem.html#standalone-crest for more examples.
