@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 3,
   "iteration": 1613096991075,
   "links": [],
   "panels": [
@@ -3004,7 +3004,7 @@
     ]
   },
   "timezone": "",
-  "title": "Producer Client Metrics",
-  "uid": "-C-IEldWk",
+  "title": "REST Proxy Metrics",
+  "uid": "-C-IEldWz",
   "version": 2
 }
